@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /phpacademy/lr/profile.php?username=$1
+
+Options -Indexes
+
+ErrorDocument 404 "<h2>404 NOT FOUND</h2><p>The document you were looking for was not found or is no longer available.</p>"
+ErrorDocument 403 "<h2>403 FORBIDDEN</h2><p>You don't have permission to access the requested directory.</p>"
