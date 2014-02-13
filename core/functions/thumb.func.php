@@ -1,3 +1,4 @@
+// Not written by me
 <?php
 function create_thumb($directory, $image, $destination) {
   $image_file = $image;
